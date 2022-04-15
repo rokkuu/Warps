@@ -1,0 +1,4 @@
+name: Warps
+version: '${project.version}'
+main: com.github.rokkuu.warps.Warps
+api-version: 1.18
