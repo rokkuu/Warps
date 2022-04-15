@@ -17,5 +17,11 @@ commands:
     aliases:
       - getwarps
       - warpsget
+  warpr:
+    description: delete warp
+    aliases:
+      - warpdelete
+      - warpremove
+
 
 

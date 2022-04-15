@@ -18,7 +18,7 @@ public final class Warps extends JavaPlugin {
         this.getCommand("warptp").setExecutor(new OnTeleportWarp());
         this.getCommand("warps").setExecutor(new OnWarps());
         this.getCommand("warpr").setExecutor(new OnRemoveWarp());
-
+        this.getCommand("warpr").setExecutor(new OnRemoveWarp());
     }
 
     @Override
