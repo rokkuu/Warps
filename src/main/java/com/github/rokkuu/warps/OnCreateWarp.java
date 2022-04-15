@@ -44,9 +44,13 @@ public class OnCreateWarp implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player){
-            Location playerLocationOnCommand = ((Player) sender).getLocation();
-            warps.put(args[0], playerLocationOnCommand);
-            sender.sendMessage(ChatColor.DARK_GREEN + args[0] + ChatColor.GREEN + " has been successfully created!");
+            if (!isInLocationList(args[0])){
+                Location playerLocationOnCommand = ((Player) sender).getLocation();
+                warps.put(args[0], playerLocationOnCommand);
+                sender.sendMessage(ChatColor.DARK_GREEN + args[0] + ChatColor.GREEN + " has been successfully created!");
+            } else {
+                sender.sendMessage(ChatColor.RED + "Already exists!");
+            }
         }
         return true;
     }
