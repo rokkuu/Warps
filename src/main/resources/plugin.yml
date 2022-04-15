@@ -2,3 +2,20 @@ name: Warps
 version: '${project.version}'
 main: com.github.rokkuu.warps.Warps
 api-version: 1.18
+commands:
+  warpc:
+    description: Create new warp
+    aliases:
+      - warpnew
+      - newarp
+  warptp:
+    description: Teleport to warp
+    aliases:
+      - warpteleport
+  warps:
+    description: Get all warps
+    aliases:
+      - getwarps
+      - warpsget
+
+

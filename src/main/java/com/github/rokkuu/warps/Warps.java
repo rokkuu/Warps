@@ -6,7 +6,9 @@ public final class Warps extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        this.getCommand("warpc").setExecutor(new OnCreateWarp());
+        this.getCommand("warptp").setExecutor(new OnTeleportWarp());
+        this.getCommand("warps").setExecutor(new OnWarps());
 
     }
 
