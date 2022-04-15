@@ -22,7 +22,7 @@ public class OnTeleportWarp implements CommandExecutor {
                 player.teleport(location);
                 player.sendMessage(ChatColor.GREEN + "You have been successfully teleported to warp: " + ChatColor.DARK_GREEN + locationName);
             } else {
-                player.sendMessage("There is no such warp. Get all warps: /warps");
+                player.sendMessage(ChatColor.RED + "There is no such warp. Get all warps: /warps");
             }
         }
         return true;
